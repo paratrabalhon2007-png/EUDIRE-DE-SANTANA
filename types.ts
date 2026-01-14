@@ -1,4 +1,7 @@
 
+// Import React to resolve 'React.ReactNode' namespace errors
+import React from 'react';
+
 export interface Service {
   id: string;
   title: string;

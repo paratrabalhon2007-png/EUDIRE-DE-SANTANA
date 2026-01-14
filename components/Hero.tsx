@@ -4,6 +4,23 @@ import React from 'react';
 const Hero: React.FC = () => {
   const whatsappLink = "https://api.whatsapp.com/send?phone=5575999838455&text=Ol%c3%a1,%20gostaria%20de%20conhecer%20mais%20os%20seus%20servi%c3%a7os%20de%20Contabilidade%20e%20Gest%c3%a3o.";
 
+  const handleScrollToServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('servicos');
+    if (element) {
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section id="inicio" className="relative min-h-[95vh] flex items-center pt-20 overflow-hidden bg-[#0B0B0B] scroll-mt-28">
       {/* Background Decorative Elements */}
@@ -36,6 +53,7 @@ const Hero: React.FC = () => {
               </a>
               <a 
                 href="#servicos"
+                onClick={handleScrollToServices}
                 className="border-2 border-white/20 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all backdrop-blur-sm text-center"
               >
                 Ver Serviços
@@ -50,11 +68,11 @@ const Hero: React.FC = () => {
                 <img 
                   src="https://i.imgur.com/vxNJxtJ.png" 
                   alt="Eudire De Santana" 
-                  className="w-full max-w-[480px] h-auto object-cover block grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full max-w-[480px] h-auto object-cover block grayscale"
                 />
               </div>
               
-              {/* Floating Stat Card - Ajustado left de -8 para 4 no mobile para mover para a direita */}
+              {/* Floating Stat Card */}
               <div className="absolute -bottom-8 left-4 md:-left-12 bg-[#F7931E] p-8 rounded-[2.5rem] shadow-2xl z-20 max-w-[260px] animate-bounce-slow">
                  <div className="text-black font-black text-5xl mb-1 tracking-tighter">17+</div>
                  <div className="text-black/80 text-sm font-bold uppercase leading-tight tracking-wider">

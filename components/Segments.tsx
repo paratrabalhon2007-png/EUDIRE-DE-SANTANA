@@ -20,9 +20,9 @@ const Segments: React.FC = () => {
           {SEGMENTS.map((segment, idx) => (
             <div 
               key={idx} 
-              className="group flex flex-col items-center text-center p-12 rounded-[3rem] bg-white border border-white shadow-2xl transition-all duration-500 hover:-translate-y-3"
+              className="group flex flex-col items-center text-center p-12 rounded-[3rem] bg-white border border-white shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] cursor-default"
             >
-              <div className="w-20 h-20 bg-[#F7931E] text-white rounded-[1.5rem] flex items-center justify-center mb-10 shadow-lg transition-all duration-500">
+              <div className="w-20 h-20 bg-[#F7931E] text-white rounded-[1.5rem] flex items-center justify-center mb-10 shadow-lg transition-all duration-500 group-hover:rotate-6">
                 {segment.icon}
               </div>
               <h3 className="font-black text-[#0B0B0B] text-lg leading-tight uppercase tracking-tight">
@@ -32,19 +32,19 @@ const Segments: React.FC = () => {
           ))}
         </div>
 
-        {/* Versão Mobile (Carrossel com Blocos Brancos) */}
-        <div className="lg:hidden relative">
-          <div className="flex animate-marquee gap-6 py-8">
-            {/* Duplicamos a lista para criar o efeito infinito suave */}
-            {[...SEGMENTS, ...SEGMENTS].map((segment, idx) => (
+        {/* Versão Mobile (Grid 2x2) */}
+        <div className="lg:hidden">
+          <div className="grid grid-cols-2 gap-4 py-4">
+            {SEGMENTS.map((segment, idx) => (
               <div 
                 key={idx} 
-                className="flex-shrink-0 w-72 flex flex-col items-center text-center p-10 rounded-[2.5rem] bg-white border border-white shadow-xl"
+                className="flex flex-col items-center text-center p-6 rounded-[2rem] bg-white border border-white shadow-xl transition-all duration-300 active:scale-95 hover:scale-[1.03]"
               >
-                <div className="w-16 h-16 bg-[#F7931E] text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                  {segment.icon}
+                <div className="w-12 h-12 bg-[#F7931E] text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  {/* Fixed: Cast to React.ReactElement<any> to resolve TypeScript error on 'size' prop in React.cloneElement */}
+                  {React.cloneElement(segment.icon as React.ReactElement<any>, { size: 24 })}
                 </div>
-                <h3 className="font-black text-[#0B0B0B] text-base leading-tight uppercase tracking-tight whitespace-normal">
+                <h3 className="font-black text-[#0B0B0B] text-[11px] leading-tight uppercase tracking-tight">
                   {segment.label}
                 </h3>
               </div>

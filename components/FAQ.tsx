@@ -4,7 +4,8 @@ import { FAQS } from '../constants';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  // Alterado de 0 para null para que todos iniciem fechados
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section id="faq" className="py-24 bg-white scroll-mt-28">
