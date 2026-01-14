@@ -3,7 +3,7 @@ import React from 'react';
 import { MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Location: React.FC = () => {
-  const googleMapsUrl = "https://maps.app.goo.gl/SjmNgjh84MipYq8c9";
+  const googleMapsUrl = "https://maps.app.goo.gl/wy37zD9c22mL6Bpw9";
   const whatsappLink = "https://api.whatsapp.com/send?phone=5575999838455&text=Ol%c3%a1,%20gostaria%20de%20solicitar%20uma%20avalia%c3%a7%c3%a3o%20sem%20compromisso.";
 
   return (
@@ -62,22 +62,32 @@ const Location: React.FC = () => {
             </div>
           </div>
 
-          {/* Coluna do Mapa */}
+          {/* Coluna do Mapa com Imagem de Fundo */}
           <div className="relative group lg:mt-10">
-            <div className="bg-[#141414] rounded-[3rem] p-12 md:p-20 aspect-square flex flex-col items-center justify-center text-center border border-white/5 shadow-2xl relative overflow-hidden">
+            <div className="relative bg-[#141414] rounded-[3rem] p-12 md:p-20 aspect-square flex flex-col items-center justify-center text-center border border-white/5 shadow-2xl overflow-hidden">
+              
+              {/* Imagem de Fundo (Fachada) */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                style={{ backgroundImage: 'url(https://i.imgur.com/Crd4DKD.png)' }}
+              />
+              
+              {/* Overlay Escuro para Contraste */}
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-500"></div>
+
               {/* Background Glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#F7931E]/5 rounded-full blur-[100px] pointer-events-none"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#F7931E]/10 rounded-full blur-[100px] pointer-events-none"></div>
               
               <div className="relative z-10 flex flex-col items-center">
-                <MapPin className="text-slate-600 mb-6 group-hover:text-[#F7931E] transition-colors" size={64} />
-                <h3 className="text-white font-black text-3xl md:text-4xl mb-4 tracking-tighter">HELIÓPOLIS, BA</h3>
-                <p className="text-slate-500 font-medium mb-10 max-w-xs">Atendimento presencial e digital para melhor te servir.</p>
+                <MapPin className="text-[#F7931E] mb-6 drop-shadow-[0_0_15px_rgba(247,147,30,0.5)]" size={64} />
+                <h3 className="text-white font-black text-3xl md:text-4xl mb-4 tracking-tighter drop-shadow-lg">HELIÓPOLIS, BA</h3>
+                <p className="text-slate-200 font-bold mb-10 max-w-xs drop-shadow-md">Atendimento presencial e digital para melhor te servir.</p>
                 
                 <a 
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-transparent border-2 border-slate-800 text-white rounded-full font-black hover:bg-[#F7931E] hover:text-black hover:border-[#F7931E] transition-all duration-300"
+                  className="px-8 py-4 bg-[#F7931E] border-2 border-[#F7931E] text-black rounded-full font-black hover:bg-transparent hover:text-white transition-all duration-300 shadow-xl"
                 >
                   Ver no Google Maps
                 </a>

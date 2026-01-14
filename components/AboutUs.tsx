@@ -36,7 +36,7 @@ const AboutUs: React.FC = () => {
               <img 
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000" 
                 alt="Equipe Profissional" 
-                className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                className="w-full h-[500px] object-cover grayscale"
               />
             </div>
             {/* Design accents */}
