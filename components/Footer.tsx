@@ -28,22 +28,22 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#0B0B0B] text-slate-400 pt-24 pb-12">
+    <footer className="bg-[#00162D] text-slate-400 pt-24 pb-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
           <div className="col-span-1 md:col-span-1 space-y-8">
             <div className="text-3xl font-black text-white tracking-tighter">
               EUDIRE <span className="text-[#F7931E]">DE SANTANA</span>
             </div>
-            <p className="text-slate-500 leading-relaxed font-medium">
-              Acelerando negócios com consultoria contábil de elite e gestão financeira estratégica desde 2007.
+            <p className="text-slate-400 leading-relaxed font-medium">
+              Acelerando negócios com consultoria contábil de elite e gestão financeira estratégica desde 2017 em Heliópolis e todo Brasil.
             </p>
             <div className="flex gap-5">
               <a 
                 href={instagramLink} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-[#F7931E] hover:text-black transition-all shadow-lg"
+                className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-[#F7931E] hover:text-[#001F3F] transition-all shadow-lg"
                 aria-label="Instagram"
               >
                 <Instagram size={24} />
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-white font-black text-lg mb-8 uppercase tracking-widest">Soluções</h4>
-            <ul className="space-y-4 font-bold text-slate-500">
+            <ul className="space-y-4 font-bold text-slate-400">
               <li>Abertura de Empresa</li>
               <li>BPO Financeiro</li>
               <li>Consultoria Estratégica</li>
@@ -76,22 +76,22 @@ const Footer: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="text-[#F7931E] shrink-0 mt-1" size={20} />
-                <span className="font-medium text-slate-300">Bahia - Brasil<br />Atendimento Digital em Todo País</span>
+                <span className="font-medium text-slate-200">Tv. Ulysses Guimarães, 605<br />Heliópolis - BA</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="text-[#F7931E] shrink-0" size={20} />
-                <span className="font-bold text-slate-300">{phoneNumber}</span>
+                <span className="font-bold text-slate-200">{phoneNumber}</span>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="text-[#F7931E] shrink-0" size={20} />
-                <a href={`mailto:${email}`} className="hover:text-[#F7931E] transition-colors font-bold text-slate-300">{email}</a>
+                <a href={`mailto:${email}`} className="hover:text-[#F7931E] transition-colors font-bold text-slate-200">{email}</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-6 text-sm font-bold">
-          <p className="text-slate-600">© {new Date().getFullYear()} Eudire De Santana. Todos os direitos reservados.</p>
+          <p className="text-slate-500">© {new Date().getFullYear()} Eudire De Santana. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

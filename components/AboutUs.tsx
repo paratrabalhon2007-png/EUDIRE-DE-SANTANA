@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
             </h2>
             <div className="space-y-6 text-slate-600 leading-relaxed text-lg font-medium">
               <p>
-                Com mais de 17 anos de experiência, somos especialistas em simplificar a burocracia para que você possa focar no crescimento real do seu negócio.
+                Com mais de 7 anos de experiência, somos especialistas em simplificar a burocracia para que você possa focar no crescimento real do seu negócio.
               </p>
               <p>
                 Nossa equipe é formada por consultores apaixonados por resultados, utilizando tecnologia de ponta aliada a um atendimento humanizado e exclusivo.
@@ -21,11 +21,11 @@ const AboutUs: React.FC = () => {
             </div>
             <div className="flex gap-12 pt-4">
               <div>
-                <div className="text-4xl font-black text-[#F7931E] tracking-tighter">17+</div>
+                <div className="text-4xl font-black text-[#F7931E] tracking-tighter">7+</div>
                 <div className="text-slate-500 text-xs font-black uppercase tracking-widest">Anos de Mercado</div>
               </div>
               <div>
-                <div className="text-4xl font-black text-[#F7931E] tracking-tighter">1.5k+</div>
+                <div className="text-4xl font-black text-[#F7931E] tracking-tighter">200+</div>
                 <div className="text-slate-500 text-xs font-black uppercase tracking-widest">Clientes Atendidos</div>
               </div>
             </div>
@@ -36,7 +36,7 @@ const AboutUs: React.FC = () => {
               <img 
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000" 
                 alt="Equipe Profissional" 
-                className="w-full h-[500px] object-cover grayscale"
+                className="w-full h-[500px] object-cover"
               />
             </div>
             {/* Design accents */}

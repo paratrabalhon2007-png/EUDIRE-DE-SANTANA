@@ -20,9 +20,9 @@ import {
 import { Service, FAQItem, StatItem, SegmentItem } from './types';
 
 export const STATS: StatItem[] = [
-  { label: 'Clientes satisfeitos', value: '+ 600', icon: <Users className="w-8 h-8" /> },
-  { label: 'Anos de experiência', value: '+ 17', icon: <Calendar className="w-8 h-8" /> },
-  { label: 'Empresas mensais', value: '+ 300', icon: <Building2 className="w-8 h-8" /> },
+  { label: 'Clientes atendidos', value: '+ 200', icon: <Users className="w-8 h-8" /> },
+  { label: 'Anos de experiência', value: '+ 7', icon: <Calendar className="w-8 h-8" /> },
+  { label: 'Empresas mensais', value: '+ 50', icon: <Building2 className="w-8 h-8" /> },
 ];
 
 export const SEGMENTS: SegmentItem[] = [

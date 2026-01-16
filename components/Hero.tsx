@@ -22,15 +22,15 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-[95vh] flex items-center pt-20 overflow-hidden bg-[#0B0B0B] scroll-mt-28">
+    <section id="inicio" className="relative min-h-[95vh] flex items-center pt-20 overflow-hidden bg-[#001F3F] scroll-mt-28">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F7931E]/5 skew-x-12 transform translate-x-1/4"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#C77700]/5 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F7931E]/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-8 max-w-2xl order-2 md:order-1">
-            <div className="inline-flex items-center gap-2 bg-[#F7931E]/10 px-4 py-2 rounded-full text-[#F7931E] text-xs font-black uppercase tracking-widest border border-[#F7931E]/30 backdrop-blur-md">
+            <div className="inline-flex items-center gap-2 bg-[#F7931E]/20 px-4 py-2 rounded-full text-[#F7931E] text-xs font-black uppercase tracking-widest border border-[#F7931E]/30 backdrop-blur-md">
               <span className="w-2 h-2 bg-[#F7931E] rounded-full animate-pulse"></span>
               Consultoria Estratégica
             </div>
@@ -39,15 +39,15 @@ const Hero: React.FC = () => {
               <span className="text-[#F7931E]">contábil que sua</span> <br />
               empresa precisa.
             </h1>
-            <p className="text-lg text-slate-300 max-w-lg leading-relaxed font-medium">
-              Simplificando a gestão de empresários de sucesso com estratégias contábeis de alto nível por mais de 17 anos.
+            <p className="text-lg text-slate-200 max-w-lg leading-relaxed font-medium">
+              Simplificando a gestão de empresários de sucesso com estratégias contábeis de alto nível por mais de 7 anos em Heliópolis e região.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 pt-4">
               <a 
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F7931E] text-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#C77700] transition-all shadow-2xl hover:-translate-y-1 text-center"
+                className="bg-[#F7931E] text-[#001F3F] px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#C77700] transition-all shadow-2xl hover:-translate-y-1 text-center"
               >
                 Começar Agora
               </a>
@@ -68,14 +68,14 @@ const Hero: React.FC = () => {
                 <img 
                   src="https://i.imgur.com/vxNJxtJ.png" 
                   alt="Eudire De Santana" 
-                  className="w-full max-w-[480px] h-auto object-cover block grayscale"
+                  className="w-full max-w-[480px] h-auto object-cover block"
                 />
               </div>
               
               {/* Floating Stat Card */}
-              <div className="absolute -bottom-8 left-4 md:-left-12 bg-[#F7931E] p-8 rounded-[2.5rem] shadow-2xl z-20 max-w-[260px] animate-bounce-slow">
-                 <div className="text-black font-black text-5xl mb-1 tracking-tighter">17+</div>
-                 <div className="text-black/80 text-sm font-bold uppercase leading-tight tracking-wider">
+              <div className="absolute -bottom-8 left-4 md:-left-12 bg-[#F7931E] p-8 rounded-[2.5rem] shadow-2xl z-20 max-w-[260px] animate-bounce-slow text-[#001F3F]">
+                 <div className="font-black text-5xl mb-1 tracking-tighter">7+</div>
+                 <div className="text-[#001F3F]/80 text-sm font-bold uppercase leading-tight tracking-wider">
                    Anos de expertise e mercado nacional.
                  </div>
               </div>

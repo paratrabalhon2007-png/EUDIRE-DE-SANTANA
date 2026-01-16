@@ -7,18 +7,30 @@
     <title>Eudire De Santana | Consultoria Estratégica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                navy: '#001F3F',
+                navyDark: '#00162D',
+                orange: '#F7931E',
+                orangeDark: '#C77700',
+              }
+            }
+          }
+        }
+      }
+    </script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
-        .bg-brand-orange { background-color: #F7931E; }
-        .text-brand-orange { color: #F7931E; }
-        .border-brand-orange { border-color: #F7931E; }
-        
         ::selection {
             background-color: #F7931E;
-            color: #000000;
+            color: #001F3F;
         }
     </style>
 <script type="importmap">
@@ -33,9 +45,8 @@
 }
 </script>
 </head>
-<body class="bg-[#EDEDED] text-[#0B0B0B]">
+<body class="bg-[#F4F7FA] text-brand-navy">
     <div id="root"></div>
-    <!-- Ponto de entrada do React -->
     <script type="module" src="/index.tsx"></script>
 </body>
 </html>
