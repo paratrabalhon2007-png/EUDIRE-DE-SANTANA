@@ -26,10 +26,26 @@ export const STATS: StatItem[] = [
 ];
 
 export const SEGMENTS: SegmentItem[] = [
-  { label: 'Comércio', icon: <ShoppingCart className="w-6 h-6" /> },
-  { label: 'Profissionais Liberais de saúde e jurídico', icon: <Stethoscope className="w-6 h-6" /> },
-  { label: 'Prestadores de serviços em geral', icon: <Wrench className="w-6 h-6" /> },
-  { label: 'MEI e produtores Rurais', icon: <Factory className="w-6 h-6" /> },
+  { 
+    label: 'Comércio', 
+    description: 'Gestão completa para lojas físicas e e-commerce, com foco em redução de custos.',
+    icon: <ShoppingCart className="w-6 h-6" /> 
+  },
+  { 
+    label: 'Profissionais Liberais de saúde e jurídico', 
+    description: 'Assessoria especializada para médicos, advogados e outros profissionais autônomos.',
+    icon: <Stethoscope className="w-6 h-6" /> 
+  },
+  { 
+    label: 'Prestadores de serviços em geral', 
+    description: 'Controle eficiente de notas fiscais e obrigações para empresas de serviços.',
+    icon: <Wrench className="w-6 h-6" /> 
+  },
+  { 
+    label: 'MEI e produtores de conteúdo', 
+    description: 'Assessoria completa para Microempreendedores e Creators: abertura, regularização, gestão de impostos e conformidade com as plataformas.',
+    icon: <Factory className="w-6 h-6" /> 
+  },
 ];
 
 export const SERVICES: Service[] = [
@@ -62,11 +78,11 @@ export const SERVICES: Service[] = [
     whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20Recursos%20Humanos.%20Apoio%20estratégico%20na%20gestão%20do%20meu%20capital%20humano."
   },
   { 
-    id: 'regularizacao-cnpj', 
-    title: 'Regularização de CNPJ', 
+    id: 'regularizacao-mei', 
+    title: 'Regularização do MEI', 
     description: 'Terceirize essa parte para focar no que realmente importa no seu negócio.',
     icon: <BarChart3 className="w-6 h-6" />,
-    whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20regularização%20de%20CNPJ.%20Terceirizar%20essa%20parte%20para%20focar%20no%20que%20realmente%20importa%20no%20meu%20negócio."
+    whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20regularização%20do%20MEI.%20Terceirizar%20essa%20parte%20para%20focar%20no%20que%20realmente%20importa%20no%20meu%20negócio."
   },
   { 
     id: 'planejamento-tributario', 
@@ -101,7 +117,7 @@ export const FAQS: FAQItem[] = [
     answer: 'Uma contabilidade especializada entende as nuances do seu setor, garantindo que você pague o mínimo de imposto possível e esteja sempre em conformidade legal.'
   },
   {
-    question: 'Como funciona o BPO Financeiro?',
-    answer: 'Nós assumimos as rotinas financeiras do seu negócio, como contas a pagar, a receber e conciliação bancária, entregando relatórios prontos para sua tomada de decisão.'
+    question: 'Como funciona a Regularização do MEI?',
+    answer: 'Analisamos pendências, realizamos declarações em atraso e parcelamentos de débitos, garantindo que seu MEI esteja sempre em dia com a Receita Federal.'
   }
 ];

@@ -47,14 +47,14 @@ const Hero: React.FC = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F7931E] text-[#001F3F] px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#C77700] transition-all shadow-2xl hover:-translate-y-1 text-center"
+                className="bg-[#F7931E] text-[#001F3F] px-8 py-4 md:px-10 md:py-5 rounded-2xl font-black text-base md:text-lg hover:bg-[#C77700] transition-all shadow-2xl hover:-translate-y-1 text-center"
               >
                 Começar Agora
               </a>
               <a 
                 href="#servicos"
                 onClick={handleScrollToServices}
-                className="border-2 border-white/20 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all backdrop-blur-sm text-center"
+                className="border-2 border-white/20 text-white px-8 py-4 md:px-10 md:py-5 rounded-2xl font-black text-base md:text-lg hover:bg-white/10 transition-all backdrop-blur-sm text-center"
               >
                 Ver Serviços
               </a>

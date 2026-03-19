@@ -24,9 +24,9 @@ const ContactCTA: React.FC = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#F7931E] text-[#001F3F] px-12 py-6 rounded-2xl font-black text-xl hover:bg-[#C77700] transition-all flex items-center justify-center gap-4 shadow-xl hover:-translate-y-1"
+              className="bg-[#F7931E] text-[#001F3F] px-8 py-4 md:px-12 md:py-6 rounded-2xl font-black text-lg md:text-xl hover:bg-[#C77700] transition-all flex items-center justify-center gap-4 shadow-xl hover:-translate-y-1"
             >
-              <MessageCircle size={32} />
+              <MessageCircle className="w-6 h-6 md:w-8 md:h-8" />
               Conversar Agora
             </a>
           </div>

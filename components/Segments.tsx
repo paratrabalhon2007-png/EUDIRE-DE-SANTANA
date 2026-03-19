@@ -4,7 +4,7 @@ import { SEGMENTS } from '../constants';
 
 const Segments: React.FC = () => {
   return (
-    <section className="hidden lg:block pb-24 pt-12 bg-[#EDEDED] overflow-hidden">
+    <section className="pb-24 pt-12 bg-[#EDEDED] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-[#0B0B0B] mb-4 tracking-tight">
@@ -16,7 +16,7 @@ const Segments: React.FC = () => {
         </div>
 
         {/* Versão Desktop (Grid com Blocos Brancos em Destaque) */}
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {SEGMENTS.map((segment, idx) => (
             <div 
               key={idx} 
@@ -25,9 +25,14 @@ const Segments: React.FC = () => {
               <div className="w-20 h-20 bg-[#F7931E] text-white rounded-[1.5rem] flex items-center justify-center mb-10 shadow-lg transition-all duration-500 group-hover:rotate-6">
                 {segment.icon}
               </div>
-              <h3 className="font-black text-[#0B0B0B] text-lg leading-tight uppercase tracking-tight">
+              <h3 className="font-black text-[#0B0B0B] text-lg leading-tight uppercase tracking-tight mb-4">
                 {segment.label}
               </h3>
+              {segment.description && (
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                  {segment.description}
+                </p>
+              )}
             </div>
           ))}
         </div>

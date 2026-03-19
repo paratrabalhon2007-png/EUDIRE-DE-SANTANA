@@ -50,10 +50,10 @@ const Location: React.FC = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-gradient-to-r from-[#F7931E] to-[#C77700] text-[#001F3F] py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-xl transition-all active:scale-95"
+                className="w-full bg-gradient-to-r from-[#F7931E] to-[#C77700] text-[#001F3F] py-3 md:py-5 px-6 rounded-2xl font-black text-base md:text-lg flex items-center justify-center gap-3 shadow-xl transition-all active:scale-95"
               >
-                <MessageCircle size={24} />
-                Iniciar Conversa no WhatsApp
+                <MessageCircle className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
+                <span className="text-center">Iniciar Conversa no WhatsApp</span>
               </a>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Location: React.FC = () => {
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-[#F7931E] border-2 border-[#F7931E] text-[#001F3F] rounded-full font-black hover:bg-transparent hover:text-[#F7931E] transition-all duration-300 shadow-xl"
+                  className="px-6 py-3 md:px-8 md:py-4 bg-[#F7931E] border-2 border-[#F7931E] text-[#001F3F] rounded-full font-black hover:bg-transparent hover:text-[#F7931E] transition-all duration-300 shadow-xl"
                 >
                   Ver no Google Maps
                 </a>

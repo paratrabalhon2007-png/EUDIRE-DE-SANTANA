@@ -23,5 +23,6 @@ export interface StatItem {
 
 export interface SegmentItem {
   label: string;
+  description?: string;
   icon: React.ReactNode;
 }
