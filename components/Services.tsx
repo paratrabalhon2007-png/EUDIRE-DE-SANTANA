@@ -13,7 +13,7 @@ const Services: React.FC = () => {
             Consultoria e Gestão de Alto Nível
           </h2>
           <p className="text-slate-300 max-w-2xl mx-auto font-medium text-lg">
-            Garantimos a conformidade legal e a eficiência financeira para sua empresa em Heliópolis crescer com segurança.
+            Garantimos a conformidade legal e a eficiência financeira para sua empresa em Sergipe, Bahia e São Paulo crescer com segurança.
           </p>
         </div>
 

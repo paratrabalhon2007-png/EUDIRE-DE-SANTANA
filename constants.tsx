@@ -22,7 +22,7 @@ import { Service, FAQItem, StatItem, SegmentItem } from './types';
 export const STATS: StatItem[] = [
   { label: 'Clientes atendidos', value: '+ 200', icon: <Users className="w-8 h-8" /> },
   { label: 'Anos de experiência', value: '+ 7', icon: <Calendar className="w-8 h-8" /> },
-  { label: 'Empresas mensais', value: '+ 50', icon: <Building2 className="w-8 h-8" /> },
+  { label: 'Empresas impactadas', value: '+ 50', icon: <Building2 className="w-8 h-8" /> },
 ];
 
 export const SEGMENTS: SegmentItem[] = [
@@ -62,11 +62,11 @@ export const SERVICES: Service[] = [
     whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20Recursos%20Humanos.%20Apoio%20estratégico%20na%20gestão%20do%20meu%20capital%20humano."
   },
   { 
-    id: 'bpo-financeiro', 
-    title: 'BPO Financeiro', 
-    description: 'Terceirize seu financeiro e foque no que realmente importa.',
+    id: 'regularizacao-cnpj', 
+    title: 'Regularização de CNPJ', 
+    description: 'Terceirize essa parte para focar no que realmente importa no seu negócio.',
     icon: <BarChart3 className="w-6 h-6" />,
-    whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20BPO%20Financeiro.%20Terceirar%20o%20financeiro%20para%20focar%20no%20que%20realmente%20importa."
+    whatsappLink: "https://api.whatsapp.com/send?phone=5575999838455&text=Olá,%20quero%20saber%20mais%20sobre%20regularização%20de%20CNPJ.%20Terceirizar%20essa%20parte%20para%20focar%20no%20que%20realmente%20importa%20no%20meu%20negócio."
   },
   { 
     id: 'planejamento-tributario', 

@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               EUDIRE <span className="text-[#F7931E]">DE SANTANA</span>
             </div>
             <p className="text-slate-400 leading-relaxed font-medium">
-              Acelerando negócios com consultoria contábil de elite e gestão financeira estratégica desde 2017 em Heliópolis e todo Brasil.
+              Acelerando negócios com consultoria contábil de elite e gestão financeira estratégica desde 2019 em Sergipe, Bahia e São Paulo e todo Brasil.
             </p>
             <div className="flex gap-5">
               <a 

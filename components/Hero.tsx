@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
               empresa precisa.
             </h1>
             <p className="text-lg text-slate-200 max-w-lg leading-relaxed font-medium">
-              Simplificando a gestão de empresários de sucesso com estratégias contábeis de alto nível por mais de 7 anos em Heliópolis e região.
+              Simplificando a gestão de empresários de sucesso com estratégias contábeis de alto nível por mais de 7 anos em Sergipe, Bahia e São Paulo.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 pt-4">
               <a 
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
               {/* Photo Frame */}
               <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-[0_0_50px_rgba(247,147,30,0.2)] border-4 border-[#F7931E]/20">
                 <img 
-                  src="https://i.imgur.com/vxNJxtJ.png" 
+                  src="https://i.imgur.com/mz26FDq.jpeg" 
                   alt="Eudire De Santana" 
                   className="w-full max-w-[480px] h-auto object-cover block"
                 />
